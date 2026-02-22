@@ -10,9 +10,10 @@ import java.io.IOException;
 public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("splash.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 627, 354);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("splash-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 500, 300);
+        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+        stage.setTitle("Library App!");
         stage.setScene(scene);
         stage.show();
     }

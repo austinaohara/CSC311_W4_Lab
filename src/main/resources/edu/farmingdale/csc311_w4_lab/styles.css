@@ -1,0 +1,152 @@
+/* Root screen for every scene */
+.root,
+.app-screen {
+    /* dark mode background */
+    -fx-background-color: #121212;
+
+    /* book icon in top-left */
+    -fx-background-image: url("images/book.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left 12 top 12;
+    -fx-background-size: 32 32;
+}
+
+/* Text styles */
+.title-label {
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.body-label {
+    -fx-text-fill: #cfcfcf;
+    -fx-font-size: 14px;
+}
+
+.error-label {
+    -fx-text-fill: #ff6b6b;
+    -fx-font-size: 12px;
+}
+
+/* Text input fields */
+.text-field,
+.password-field,
+.app-text-field {
+    -fx-background-color: #1f1f1f;
+    -fx-text-fill: #f5f5f5;
+    -fx-prompt-text-fill: #8f8f8f;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #3a3a3a;
+    -fx-border-width: 1;
+    -fx-padding: 8 10 8 10;
+}
+
+/* JavaFX text-input control base class */
+.text-input,
+.app-text-field {
+    -fx-text-fill: #f5f5f5;
+}
+
+/* Buttons */
+.button,
+.app-button {
+    -fx-background-color: #2d6cdf;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 14 8 14;
+}
+
+.button:hover,
+.app-button:hover {
+    -fx-background-color: #3b7cff;
+}
+
+.button:pressed,
+.app-button:pressed {
+    -fx-background-color: #2459b7;
+}
+
+/* Progress bar styling (optional dark mode match) */
+.progress-bar {
+    -fx-accent: #2d6cdf;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #2a2a2a;
+    -fx-background-radius: 6;
+}
+
+.progress-bar > .bar {
+    -fx-background-radius: 6;
+}
+
+.scene-nav {
+    -fx-background-color: transparent;
+}
+
+.scene-nav-button {
+    -fx-min-width: 28;
+    -fx-pref-width: 28;
+    -fx-min-height: 24;
+    -fx-pref-height: 24;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 0;
+}
+
+.top-nav {
+    -fx-background-color: #1a1a1a;
+    -fx-border-color: #2f2f2f;
+    -fx-border-width: 0 0 1 0;
+}
+
+.book-icon {
+    -fx-min-width: 32;
+    -fx-pref-width: 32;
+    -fx-min-height: 32;
+    -fx-pref-height: 32;
+    -fx-background-image: url("images/book.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 32 32;
+}
+
+.top-nav-button {
+    -fx-background-color: #303030;
+    -fx-text-fill: #efefef;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-padding: 5 10 5 10;
+}
+
+.top-nav-button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.news-panel {
+    -fx-background-color: rgba(15, 15, 15, 0.65);
+}
+
+.news-title {
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.news-content {
+    -fx-background-color: #1f1f1f;
+    -fx-background-insets: 0;
+    -fx-background-radius: 6;
+    -fx-border-color: #3a3a3a;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-size: 13px;
+}
+
+.news-content .content {
+    -fx-background-color: #1f1f1f;
+    -fx-background-radius: 6;
+}

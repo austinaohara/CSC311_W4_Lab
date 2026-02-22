@@ -3,7 +3,7 @@ package edu.farmingdale.csc311_w4_lab;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class SplashController {
+public class LandingController {
     @FXML
     private Button navPrevButton;
 
@@ -12,7 +12,7 @@ public class SplashController {
 
     @FXML
     public void initialize() {
-        navPrevButton.setOnAction(event -> SceneNavigator.goTo(navPrevButton, "landing-view.fxml"));
-        navNextButton.setOnAction(event -> SceneNavigator.goTo(navNextButton, "login-view.fxml"));
+        navPrevButton.setOnAction(event -> SceneNavigator.goTo(navPrevButton, "login-view.fxml"));
+        navNextButton.setOnAction(event -> SceneNavigator.goTo(navNextButton, "splash-view.fxml"));
     }
 }
